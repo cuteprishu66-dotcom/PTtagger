@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "portal_tier_tagger",
+  "version": "${version}",
+  "name": "Portal Tier Tagger",
+  "description": "Displays Portal Tiers rankings above player nametags. Powered by portal-tiers.netlify.app",
+  "authors": ["You"],
+  "license": "MIT",
+  "icon": "assets/portal_tier_tagger/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["net.portaltiertagger.PortalTierTagger"]
+  },
+  "mixins": ["portal_tier_tagger.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "cloth-config": ">=15.0.0"
+  }
+}
